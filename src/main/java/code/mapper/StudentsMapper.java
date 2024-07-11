@@ -1,6 +1,6 @@
 package code.mapper;
 
-import code.Students;
+import code.entity.Students;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

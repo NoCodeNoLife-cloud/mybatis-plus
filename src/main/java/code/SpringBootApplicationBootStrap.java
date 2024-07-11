@@ -3,6 +3,7 @@ package code;
 // Copyright (c) 2024, NoCodeNoLife-cloud. All rights reserved.
 // Author: NoCodeNoLife-cloud
 // stay hungry，stay foolish
+import code.entity.Students;
 import code.service.impl.StudentsServiceImpl;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;

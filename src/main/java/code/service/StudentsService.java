@@ -1,6 +1,6 @@
 package code.service;
 
-import code.Students;
+import code.entity.Students;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="code.mapper.StudentsMapper">
 
-    <resultMap id="BaseResultMap" type="code.Students">
+    <resultMap id="BaseResultMap" type="code.entity.Students">
             <id property="id" column="id" jdbcType="INTEGER"/>
             <result property="name" column="name" jdbcType="VARCHAR"/>
             <result property="grade" column="grade" jdbcType="INTEGER"/>

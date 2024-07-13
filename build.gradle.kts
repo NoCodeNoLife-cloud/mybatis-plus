@@ -36,6 +36,12 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:1.5.6")
     // https://mvnrepository.com/artifact/ch.qos.logback/logback-core
     implementation("ch.qos.logback:logback-core:1.5.6")
+
+    // https://mvnrepository.com/artifact/io.lettuce/lettuce-core
+    implementation("io.lettuce:lettuce-core:6.3.2.RELEASE")
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-pool2
+    implementation("org.apache.commons:commons-pool2:2.12.0")
 }
 
 tasks.test {

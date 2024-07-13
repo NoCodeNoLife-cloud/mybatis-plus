@@ -22,6 +22,7 @@ import org.springframework.context.annotation.Bean;
 public class SpringBootApplicationBootStrap {
 	/**
 	 * Entry point of the application.
+	 *
 	 * @param args The command line arguments.
 	 */
 	@SneakyThrows
@@ -33,12 +34,14 @@ public class SpringBootApplicationBootStrap {
 	/**
 	 * This method creates and returns an ApplicationRunner bean.
 	 * The ApplicationRunner bean is used to execute code when the application starts.
+	 *
 	 * @return an ApplicationRunner bean
 	 */
 	@Bean
 	public ApplicationRunner applicationRunner(@Autowired StudentsServiceImpl studentsService) {
 		return args -> {
 			studentsService.save(new Students(1, "张山", 18));
+			log.info(studentsService.getById(1).toString());
 			log.info(studentsService.getById(1).toString());
 			studentsService.removeById(1);
 		};
